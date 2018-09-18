@@ -12,7 +12,7 @@ var fs = require('fs'),
     config = require('./config.js');
 
 /* Connect to your database */
-mongoose.connect('mongodb://OiledNarwhal:StarshipEcho3@ds255282.mlab.com:55282/cen3031oilednarwhal', {useMongoClient: true});
+mongoose.connect('mongodb://CEN3031:CEN3031TA@ds255282.mlab.com:55282/cen3031oilednarwhal', {useMongoClient: true});
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function()
